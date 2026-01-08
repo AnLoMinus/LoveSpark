@@ -134,6 +134,16 @@ a {
   background: #fff;
 }
 
+.btn.whatsapp {
+  background: #25d366;
+  color: #fff;
+  border-color: #1fa855;
+}
+
+.btn.whatsapp:hover {
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
+}
+
 .btn:hover {
   transform: translateY(-2px);
 }
