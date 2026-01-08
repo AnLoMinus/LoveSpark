@@ -163,6 +163,76 @@ a {
   font-size: 0.9rem;
 }
 
+.hero-roulette {
+  background: #fff;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.roulette-panel h3 {
+  margin-bottom: 0.5rem;
+}
+
+.roulette-wheel {
+  margin: 1.5rem 0;
+  background: #fdf7f9;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1rem;
+  position: relative;
+  min-height: 240px;
+  overflow: hidden;
+}
+
+.roulette-pointer {
+  position: absolute;
+  top: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.roulette-list {
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+  max-height: 220px;
+  overflow: hidden;
+}
+
+.roulette-item {
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: #fff;
+  font-size: 0.95rem;
+  color: var(--muted);
+  transition: all 0.2s ease;
+}
+
+.roulette-item.active {
+  border-color: var(--accent);
+  color: var(--text);
+  box-shadow: 0 8px 20px rgba(40, 20, 40, 0.12);
+  transform: scale(1.02);
+}
+
+.roulette-result {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.result-label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .hero-card {
   background: #fff;
   border-radius: 24px;

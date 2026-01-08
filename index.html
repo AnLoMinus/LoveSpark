@@ -41,20 +41,26 @@
         </div>
         <div class="hero-badges">
           <div class="badge">✅ 100% בעברית</div>
-          <div class="badge">🎴 12 קלפים ייחודיים</div>
+          <div class="badge">🎴 24 קלפים ייחודיים</div>
           <div class="badge">💬 שאלות מדויקות לזוגות</div>
         </div>
       </div>
-      <div class="hero-card">
-        <h3>הפתיחה הנכונה</h3>
-        <p>
-          קחו נשימה. בחרו קלף אחד יחד. אפשר לקרוא בקול, לענות בזוג או לחזור אליו לאורך היום.
-        </p>
-        <ul>
-          <li>⏱️ 8–12 דקות לכל סשן</li>
-          <li>🕯️ אווירה רגועה עם מוזיקה שקטה</li>
-          <li>🤝 בלי שיפוט, רק סקרנות</li>
-        </ul>
+      <div class="hero-roulette">
+        <div class="roulette-panel">
+          <h3>רולטת הקלפים</h3>
+          <p>לחצו כדי לסובב ולקבל קלף זוגי לביצוע.</p>
+          <div class="roulette-wheel">
+            <div class="roulette-pointer">▲</div>
+            <ul class="roulette-list" id="rouletteList" aria-live="polite"></ul>
+          </div>
+          <button class="btn primary" id="rouletteSpin">סובבו עכשיו</button>
+        </div>
+        <div class="roulette-result" aria-live="polite">
+          <p class="result-label">הקלף שנבחר עבורך</p>
+          <h3 id="rouletteTitle">בואו נתחיל</h3>
+          <p id="rouletteText">סובבו את הרולטה כדי לקבל משימה או שאלה לזוגיות.</p>
+          <div class="card-footer" id="rouletteGoal">מטרה: חיבור ראשון</div>
+        </div>
       </div>
     </section>
 
